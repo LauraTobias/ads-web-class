@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CalculatorController;
+use App\Http\Controllers\PersonController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,4 +20,4 @@ Route::get('/', function ()
     return view('welcome');
 });
 
-Route::post('/', [CalculatorController::class, 'calculate'])->name('calculateOperation');
+Route::post('/', [PersonController::class, 'register'])->name('register-person');
